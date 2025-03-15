@@ -1,0 +1,41 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /* نوع الخط */
+    margin: 20px; /* هامش الصفحة */
+}
+
+h1 {
+    color: #0d8d04; /* لون العنوان */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    margin-top: 20px; /* هامش النموذج */
+}
+
+label {
+    display: block; /*شكل عرض التسمية  */
+    margin-bottom: 5px; /* هامش أسفل التسمية */
+    color: #016d01;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%; /* عرض الحقل بنسبة 100% */
+    padding: 8px; /* تباعد داخلي للحقل */
+    margin-bottom: 16px; /* هامش أسفل الحقل */
+    border: 2px solid #178002; /* حدود الحقل */
+    border-radius: 500px; /* زوايا مدورة للحقل */
+}
+
+input[type="submit"] {
+    background-color: rgb(23, 102, 3); /* لون خلفية زر الإرسال */
+    color: rgb(239, 246, 237); /* لون النص */
+    padding: 10px 20px; /* تباعد داخلي للزر */
+    border:none; /* إزالة الحدود */
+    border-radius: 500px; /* زوايا مدورة للزر */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(9, 187, 48); /* لون خلفية الزر عند التمرير */
+}
