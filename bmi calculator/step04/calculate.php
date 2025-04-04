@@ -1,4 +1,17 @@
 <?php
+// الاتصال بقاعدة البيانات
+$servername = "localhost";
+$username = "root"; 
+$password = "";  
+$dbname = "bmi";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 // التحقق من وجود البيانات المطلوبة
 if (isset($_POST['name'], $_POST['weight'], $_POST['height'])) {
     // تنظيف البيانات المدخلة
